@@ -35,12 +35,12 @@ target_include_directories(phplib PRIVATE
 
 #
 
-set(python_main
+set(php_main
        Programs/python.c)
-add_executable(python ${python_main})
-target_include_directories(python PRIVATE
+add_executable(php ${php_main})
+target_include_directories(php PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(python phplib)
+target_link_libraries(php phplib)
 
 
